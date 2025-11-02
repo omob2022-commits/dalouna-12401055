@@ -1,0 +1,441 @@
+/* 
+ css/styles.css 
+ Student Name: عمر فلاح رشدي عبيد
+ Student Id: 12401055
+*/
+
+:root {
+  --bg: #faf7f2;
+  --text: #1f1f1f;
+  --muted: #6b6b6b;
+  --brand: #216869;
+  --brand-2: #49a078;
+  --card: #ffffff;
+  --border: #e9e3db;
+}
+
+body {
+  margin: 0;
+  font-family: "Rubik", sans-serif, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+/* HEADER */
+.site-header {
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: var(--brand);
+  font-weight: 700;
+  margin: 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--brand);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--text);
+}
+
+/* HERO SECTION */
+
+.hero {
+  color: var(--bg);
+  text-align: center;
+  padding: 0px;
+  position: relative;
+}
+.hero-image {
+  width: 100%;
+  height: 60vh;
+}
+.hero-content {
+  position : absolute;
+  top : 50%;
+  left : 50%;
+  transform: translate(-50%, -50%);
+  font-family: Rubik; 
+}
+
+.hero-tagline {
+  background: var(--brand-2);
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.hero-title {
+  font-size: 3rem;
+  margin: 0.5rem 0;
+  font-weight: 700;
+}
+
+.hero-text {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.btn {
+  background: var(--brand);
+  color: white;
+  padding: 0.75rem 1.8rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: var(--brand);
+  transform: translateY(-2px);
+}
+
+/* ABOUT SECTION */
+#about {
+  padding: 5rem 1rem;
+  background: var(--bg);
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.about-card h2 {
+  color: var(--text);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.about-card p {
+  color: var(--text);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.tag {
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 0.4rem 0.9rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* MENU SECTION */
+#menu {
+  padding: 5rem 1rem;
+  background: var(--bg);
+}
+
+.menu-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+.menu-header h2 {
+  font-size: 2.5rem;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.menu-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.menu-card h3 {
+  color: var(--text);
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.menu-item {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.menu-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.3rem;
+}
+
+.item-name {
+  font-weight: 600;
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.item-price {
+  color: var(--brand);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.item-description {
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.menu-note {
+  text-align: left;
+  color: var(--muted);
+  font-size: 0.85rem;
+  top: 30%;
+  left: 50%;
+  margin-left: 19.5%;
+  font-family: Rubik;
+}
+
+/* HOURS & RESERVE SECTION */
+.hours-reserve {
+  background-color: var(--bg);
+  color: var(--text);
+  padding: 5rem 2rem;
+}
+
+.hours-reserve .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.hours,
+.reserve {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.hours-reserve h2 {
+  font-size: 2rem;
+  color: var(--text);
+  margin-bottom: 1.5rem;
+}
+
+.hours-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hours-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 1rem;
+}
+
+.hours-list li:last-child {
+  border-bottom: none;
+}
+
+.day {
+  font-weight: 500;
+}
+
+.time {
+  color: var(--muted);
+}
+
+.reserve-info p {
+  margin: 0.7rem 0;
+  font-size: 1rem;
+}
+
+.reserve-info a {
+  color: var(--brand-2);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.reserve-info a:hover {
+  text-decoration: underline;
+}
+
+/* FIND US SECTION */
+#find-us {
+  padding: 5rem 1rem;
+  background: var(--bg);
+}
+
+.find-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.location-info {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.location-info h2 {
+  font-size: 2rem;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+
+.address {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.location-details {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.map-container {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  height: 300px;
+  background: var(--bg);
+}
+
+.map-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* FOOTER */
+.site-footer {
+  background: var(--bg);
+  color: var(--muted);
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.footer-container p {
+  margin: 0.5rem 0;
+}
+
+.footer-container a {
+  color: var(--brand-2);
+  text-decoration: none;
+}
+
+.footer-container a:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .nav-links {
+    gap: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .find-container {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-header h2 {
+    font-size: 2rem;
+  }
+
+  .hours-reserve .container {
+    grid-template-columns: 1fr;
+  }
+}
