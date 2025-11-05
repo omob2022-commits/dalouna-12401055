@@ -196,19 +196,18 @@ body {
 }
 
 .menu-header {
-  text-align: center;
-  max-width: 800px;
+  text-align: left;
+  max-width: 1200px;
   margin: 0 auto 3rem;
+  padding: 0 1rem;
+  margin-top: 4rem;
 }
 
 .menu-header h2 {
   font-size: 2.5rem;
   color: var(--text);
-  margin-left: 1%;
+  margin: 0;
   text-align: left;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
   font-family: Rubik;
 }
 
@@ -282,6 +281,7 @@ body {
   font-family: Rubik;
 }
 
+/* HOURS & RESERVE SECTION */
 .hours-reserve {
   background-color: var(--bg);
   color: var(--text);
